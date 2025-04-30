@@ -1,7 +1,6 @@
 # VNW_sispar - Projeto SISPAR | Vai na Web<br>
-----------------------------------<br>
 
-🇧🇷 Versão em Português<br>
+# 🇧🇷 Versão em Português<br>
 
 🌐 Sistema de Emissão de Boletos e Parcelamentos<br>
 Este projeto foi desenvolvido durante o curso de Desenvolvedor Full-Stack da escola Vai na Web, com o objetivo de aplicar boas práticas e desenvolver habilidades no uso do React.js, criando uma aplicação web dinâmica, eficiente e responsiva.<br>
@@ -26,13 +25,13 @@ Este projeto foi desenvolvido durante o curso de Desenvolvedor Full-Stack da esc
 Pré-requisitos: Ter o Node.js instalado<br>
 
 Instalação:<br>
-´´´<br>
-git clone https://github.com/seu-usuario/nome-do-repositorio.git<br>
-cd nome-do-repositorio<br>
-npm install<br>
-npm start<br>
-Acesse: http://localhost:3000<br>
-´´´
+```
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+cd nome-do-repositorio
+npm install
+npm start
+Acesse: http://localhost:3000
+```
 <br>
 🛠️ Funcionalidades<br>
 •	✅ Interface moderna e responsiva<br>
@@ -52,7 +51,7 @@ Acesse: http://localhost:3000<br>
 Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.<br>
 
 
-🇺🇸 English Version<br>
+# 🇺🇸 English Version<br>
 
 🌟 Technologies Used<br>
 •	• React.js – Library for building dynamic interfaces.<br>
@@ -74,13 +73,13 @@ Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais deta
 Prerequisites: Make sure Node.js is installed on your machine<br>
 Installation:<br>
 
-´´´<br>
-git clone https://github.com/your-user/repo-name.git<br>
-cd repo-name<br>
-npm install<br>
-npm start<br>
-Open your browser at: http://localhost:3000<br>
-´´´
+```
+git clone https://github.com/your-user/repo-name.git
+cd repo-name
+npm install
+npm start
+Open your browser at: http://localhost:3000
+```
 <br>
 🛠️ Features<br>
 •	✅ Responsive and modern UI<br>
