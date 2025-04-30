@@ -1,0 +1,302 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // border: solid blue;
+}
+
+.headerReembolso {
+  position: relative;
+  top: -15.5%;
+  width: 88%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.mainReembolsos {
+  // border: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+  .sisReembolsos {
+    //order: solid;
+    width: 60%;
+  }
+}
+
+.containerCards {
+  //border: solid
+  display: flex;
+  justify-content: space-between;
+  height: 20vh;
+  width: 60%;
+  margin-top: 3rem;
+
+  article:hover {
+    border-color: #23282f;
+  }
+
+  //primeiro e segundo px: profundade, terceito px: esmaecimento, o quanto px: profundidade
+  article:focus {
+    border-color: #fff;
+    box-shadow: 00px 0px 5px 1px #cbd4e1;
+  }
+}
+
+article {
+  border: solid, 1px #cbd4e1;
+  border-radius: 6px;
+  width: 25%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  font-weight: bold;
+
+  &:hover {
+    &:hover {
+      background-color: #f1f4f9;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+      border: 1px solid #f1f4f9; /* Cor da borda igual à inicial */
+      transition: all 0.3s ease-in-out; /* Transição suave */
+    }
+  }
+
+  img {
+    margin-bottom: 1rem;
+  }
+}
+
+.containerStatus {
+  border: solid, 1px, #cbd4e1;
+  border-radius: 6px;
+  width: 60%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 4rem;
+
+  div {
+    // border: solid;
+    width: 20%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  img {
+    width: 4vh;
+  }
+  .imgSolicitados {
+    background-color: #00bedd;
+    border-radius: 6px;
+    padding: 1px;
+  }
+
+  .imgAnalises {
+    background-color: orangered;
+    border-radius: 6px;
+    padding: 1px;
+  }
+
+  .imgAprovados {
+    background-color: green;
+    border-radius: 6px;
+    padding: 1px;
+  }
+
+  .imgRejeitados {
+    background-color: #a60b2f;
+    border-radius: 6px;
+    padding: 1px;
+  }
+}
+.containerSistema {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  align-items: center;
+  padding: 1rem;
+}
+// tamanho padrão pata tablests
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto; /* Adiciona scroll vertical se o conteúdo exceder a altura */
+  }
+  .headerReembolso {
+    top: 9vh;
+    bottom: 5vh;
+    display: flex;
+    
+  }
+}
+//tamanho padrão para celulares
+@media (max-width: 500px) {
+  .mainReembolsos {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto; /* Adiciona scroll vertical se o conteúdo exceder a altura */
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerReembolso {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    margin-top: -20vh;
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 2vh;
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      align-self: center;
+    }
+  }
+  .containerCards {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3vh;
+    article {
+      width: 80%;
+      height: 20vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+      font-weight: bold;
+    }    
+  }
+  //* Estilos específicos para telas menores (celulares) */
+@media (max-width: 500px) {
+  .headerReembolso {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    h1 {
+      font-size: 1.2rem; /* Reduzi ainda mais a fonte do título */
+    }
+    p {
+      font-size: 0.8rem; /* Reduzi ainda mais a fonte do parágrafo */
+    }
+  }
+
+  .containerCards {
+    margin-top: 1rem;
+  }
+
+  article {
+    width: 90%; /* Um card por linha em telas menores */
+    min-height: 12vh;
+    margin-bottom: 1rem;
+  }  
+}
+.containerStatus {
+  margin-top: 28rem;
+  padding: 0.5rem;
+  div {
+    width: 90%; /* Um status por linha */
+    margin-bottom: 0.5rem;
+  }
+  img {
+    width: 2.5vh;
+    height: auto;
+  }
+}
+
+.containerSistema {
+  margin-top: 0.5rem;
+  padding: 0.25rem;
+  font-size: 0.8rem; /* Reduzi a fonte do texto do sistema */
+}
+/* Estilos para tablets (manter as alterações que você já fez e ajustar se necessário) */
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Alinhar ao topo para melhor visualização */
+    overflow-y: auto;
+    scroll-behavior: smooth;  
+  }
+  .headerReembolso {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    margin-top: 0vh;
+    justify-self: center;
+    margin-top: 14rem;
+    margin-bottom: 4rem;
+    width: 80%;
+    height: 50vh; /* Ajustado para 50vh */
+  }
+  .containerCards {
+    justify-content: space-around;
+    margin-top: 1.5rem;
+  }
+  article {
+    width: 50%; /* Ajustar a largura dos cards para tablets */
+    min-height: 18vh;
+    margin-bottom: 0.8rem;
+  }
+  .containerStatus {
+    margin-top: 29rem;
+    justify-content: space-around;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 80%;
+    height: 20vh; /* Ajustar a altura dos status para tablets */
+    /* Remover a linha duplicada de flex-direction */
+    div {
+      width: 50%; /* Ajustar a largura dos status para tablets */
+      height: 50vh; /* Ajustar a altura dos status para tablets */
+    }
+  }
+  .containerSistema {
+    margin-top: 1rem;
+  }
+  
+}
+}
+
+

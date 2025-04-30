@@ -1,0 +1,152 @@
+@charset "UTF-8";
+.navBarEstilo {
+  position: absolute;
+  z-index: 999;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem 0 1rem 1rem;
+  transition: opacity 0.8s ease-in-out, width 0.5s ease-in-out;
+}
+.navBarEstilo section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  justify-content: space-between;
+  align-items: center;
+}
+.navBarEstilo section .containerNavbar {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+
+.navbarPeople {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbarPeople img {
+  width: 4rem;
+  height: 4rem;
+}
+.navbarPeople h2 {
+  width: 100%;
+}
+.navbarPeople p {
+  font: 1rem;
+  width: 100%;
+  color: blue;
+}
+.navbarPeople p,
+.navbarPeople h2 {
+  opacity: 0;
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+button {
+  background-color: #0844c4;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 6px;
+  border: none;
+}
+
+.buttonSair {
+  background-color: #63758d;
+}
+
+.fechado {
+  width: 5%;
+  /* Mantém o tamanho do nav fechado */
+  background-color: white;
+  overflow: hidden;
+  /* Esconde qualquer texto que ultrapasse os limites */
+  /* Esconde os textos */
+}
+.fechado .buttonNav p {
+  opacity: 0;
+  display: none;
+  /* O texto desaparece completamente */
+}
+
+.aberto {
+  background-color: white;
+  width: 15%;
+  /* Define o tamanho do nav aberto */
+  box-shadow: 0px 0px 30px 5px black;
+  /* Mostra os textos ao expandir */
+}
+.aberto .navbarPeople p,
+.aberto .navbarPeople h2 {
+  text-align: center;
+  display: block;
+  /* Torna visível novamente */
+  opacity: 1;
+  /* Aparece suavemente */
+}
+.aberto .buttonNav p {
+  display: flex;
+  opacity: 1;
+  /* Torna o texto visível */
+  margin-left: 1rem;
+  /* Alinha texto ao lado do botão */
+  font-size: 15px;
+  white-space: nowrap;
+  /* Impede que o texto quebre linha */
+  transition: opacity 2s ease-in-out;
+  /* Transição suave para exibir o texto */
+}
+
+.buttonNav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 800px) {
+  .navBarEstilo {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    flex-direction: column; /* Alterado para row */
+    justify-content: flex-start; /* Alterado para flex-start */
+    padding: 0;
+    background-color: white;
+    box-shadow: 0px 0px 30px 5px black;
+    overflow-y: auto; /* Adiciona scroll vertical se o conteúdo exceder a altura */
+  }
+  .navBarEstilo section {
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navBarEstilo section .containerNavbar {
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  /* Add styles here if needed or remove this block entirely */
+}/*# sourceMappingURL=Navbar.module.css.map */

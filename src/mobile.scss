@@ -1,0 +1,85 @@
+//* Estilos específicos para telas menores (celulares) */
+@media (max-width: 500px) {
+    .headerReembolso {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      h1 {
+        font-size: 1.2rem; /* Reduzi ainda mais a fonte do título */
+      }
+      p {
+        font-size: 0.8rem; /* Reduzi ainda mais a fonte do parágrafo */
+      }
+    }
+  
+    .containerCards {
+      margin-top: 1rem;
+    }
+  
+    article {
+      width: 90%; /* Um card por linha em telas menores */
+      min-height: 12vh;
+      margin-bottom: 1rem;
+    }  
+  }
+  .containerStatus {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    div {
+      width: 90%; /* Um status por linha */
+      margin-bottom: 0.5rem;
+    }
+    img {
+      width: 2.5vh;
+      height: auto;
+    }
+  }
+  
+  .containerSistema {
+    margin-top: 0.5rem;
+    padding: 0.25rem;
+    font-size: 0.8rem; /* Reduzi a fonte do texto do sistema */
+  }
+  /* Estilos para tablets (manter as alterações que você já fez e ajustar se necessário) */
+  @media (max-width: 800px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; /* Alinhar ao topo para melhor visualização */
+      overflow-y: auto;
+      scroll-behavior: smooth;  
+    }
+    .headerReembolso {
+      margin-top: 14rem;
+      margin-bottom: 4rem;
+      width: 100%;
+      height: 50vh; /* Ajustado para 50vh */
+    }
+    .containerCards {
+      justify-content: space-around;
+      margin-top: 1.5rem;
+    }
+    article {
+      width: 50%; /* Ajustar a largura dos cards para tablets */
+      min-height: 18vh;
+      margin-bottom: 0.8rem;
+    }
+    .containerStatus {
+      margin-top: 26rem;
+      justify-content: space-around;
+      display: flex ;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 25vh; /* Ajustar a altura dos status para tablets */
+      /* Remover a linha duplicada de flex-direction */
+      div {
+        width: 50%; /* Ajustar a largura dos status para tablets */
+        height: 50vh; /* Ajustar a altura dos status para tablets */
+      }
+    }
+    .containerSistema {
+      margin-top: 1rem;
+    }
+    
+  }

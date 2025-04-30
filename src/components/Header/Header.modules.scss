@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.Header {
+    display: flex;
+    flex-direction: column;
+    width: 4.5%;
+    height: 100vh;
+    border: solid;
+    border-color: #0844c4;
+    border-radius: 4px;
+}
+
+.Home {
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    background-image: url(../../img/Home.png);
+    background-repeat: no-repeat;
+    background-color: #000;
+    
+}
+
+    

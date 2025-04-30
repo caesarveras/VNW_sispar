@@ -1,0 +1,409 @@
+.mainSolicitacao {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%; /* Ensure proper closing of the media query or block */
+} /* Ensure proper closing of the media query or block */
+.layoutSolicitacao {
+  display: flex;
+  width: 100vw;
+  height: 90vh;
+} /* Ensure proper closing of the media query or block */
+
+.containerPrincipalSolicitacao {
+  width: 99%; /* Updated width based on recent edits */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  // border: solid;
+  padding-left: 6%;
+}
+
+.headerSolicitacao {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  //border: solid;
+  gap: 1rem;
+}
+
+.mainSolicitacao {
+  // border: solid blue;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.formSolicitacao {
+  width: 100%;
+  //border: solid red;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1%;
+}
+
+input:hover {
+  border-color: #23282f;
+}
+
+//primeiro e segundo px: profundade, terceito px: esmaecimento, o quanto px: profundidade
+input:focus {
+  border-color: #fff;
+  box-shadow: 00px 0px 5px 1px #cbd4e1;
+}
+
+// estilização input/label/textarea
+
+label {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #23282f;
+}
+
+input,
+select,
+textarea {
+  border-radius: 6px;
+  border: solid #cbd4e1 0.8px;
+  height: 5vh;
+  width: 100%;
+
+  &:hover {
+    border-color: #23282f;
+  }
+
+  //primeiro e segundo px: profundade, terceito px: esmaecimento, o quanto px: profundidade
+  &:focus {
+    border-color: #fff;
+    box-shadow: 00px 0px 5px 1px #cbd4e1;
+  }
+}
+
+//estilização grupo1
+.grupo1 {
+  //border: solid yellow;
+  width: 37%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  //align-items: center;
+  flex-wrap: wrap;
+}
+
+.inputNome {
+  width: 45%;
+}
+
+.inputEmpresa {
+  width: 25%;
+}
+
+.inputPrestacao {
+  width: 9vw;
+}
+
+.inputMotivo {
+  width: 100%;
+}
+
+//Barra vertical
+
+.barraVertical {
+  // border: solid red;
+  background-color: #cbd4e1;
+  height: 20vh;
+  width: 0.1vw;
+  display: flex;
+}
+
+// estilização do grupo 2
+
+.grupo2 {
+  //border: solid red;
+  width: 58vw;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.inputData {
+  //border: solid;
+  position: relative;
+  width: 20%;
+}
+
+.imgData {
+  background-color: #001a3d;
+  position: absolute;
+  right: 0px;
+  top: 52%;
+  transform: translateY(-50%);
+  padding: 0.57rem;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  pointer-events: none;
+}
+
+.tipoDeDespesa {
+  //border: solid;
+  width: 16vw;
+  position: relative;
+}
+
+.imgDespesa {
+  background-color: #001a3d;
+  position: absolute;
+  right: 0px;
+  top: 27%;
+  padding: 0.57rem;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  pointer-events: none;
+}
+
+.centroDeCusto {
+  position: relative;
+  width: 25vw;
+  margin-left: 2.5rem;
+}
+
+.imgCustos {
+  position: absolute;
+  right: 0px;
+  top: 48%;
+  transform: translateY(-40%);
+  padding: 0.53rem;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #001a3d;
+  pointer-events: none;
+}
+
+.ordem,
+.divisoes,
+.pep,
+.distancia {
+  //border: solid;
+  width: 6vw;
+}
+
+.moeda,
+.valorKM,
+.despesa {
+  //border: solid blue;
+  width: 10%;
+}
+.valorFaturado {
+  width: 8vw;
+}
+
+.botoes {
+  //border: solid;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 19px;
+
+  .botaoSalvar {
+    width: 50%;
+    background-color: #001a3d;
+    color: #ffff;
+  }
+
+  .customerDelete {
+    width: 40%;
+    background-color: #00bedd;
+  }
+}
+
+.containerTable {
+  margin-top: 1rem;
+  height: 40vh;
+  border: solid #cbd4e1 1px;
+  border-radius: 2px;
+  width: 93vw;
+}
+
+table {
+  width: 100%;
+  font-size: 1rem;
+  border-collapse: collapse;
+  border-radius: 6px;
+}
+
+th {
+  background-color: #f1f4f9;
+  font-weight: 400;
+  color: #23282f;
+  text-align: center;
+}
+
+table,
+th,
+td {
+  height: 5vh;
+  border: solid 1px #cbd4e1;
+  text-align: center;
+}
+table tr:hover {
+  background-color: #f1f4f9;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.containerFooter {
+  width: 100%;
+  height: 7.5vh;
+  align-items: center;
+  //border: solid;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: -3rem;
+  padding-top: 3%;  
+}
+.inputFooterFaturado,
+.inputFooterDespesa {
+  //border: solid;
+  width: 7.5vw;
+  height: 11.85vh;
+}
+.buttonCheck,
+.buttonX{
+  //border: solid;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  width: 13.28vw;
+  height: 5.0vh;
+  margin-top: 1.5rem;
+}
+
+.buttonCheck {
+  width:15 vw;
+  color: #ffff;
+  background-color: #001a3d;
+}
+.buttonX {
+  color: #ffff;
+  background-color: #a80b2f;
+}
+// padrão para tablets
+@media (max-width: 800px) {
+  .layoutSolicitacao {
+    display: flex;
+    flex-direction: row;
+    width: 100vh;
+    scroll-behavior: smooth;
+    .containerPrincipalSolicitacao {
+      display: flex;
+      width: 50vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      
+      width: 100%; /* Adiciona largura total para melhor responsividade */
+      height: auto; /* Adiciona altura automática para melhor responsividade */
+    }
+    .headerSolicitacao {
+      display: flex;
+      flex-direction: column;
+      width: 100%; /* Adiciona largura total para melhor responsividade */
+    }
+    .mainSolicitacao {
+      display: flex;
+
+      .formSolicitacao {
+        display: flex;
+        width: 100%; /* Adiciona largura total para melhor responsividade */
+        height: auto; /* Adiciona altura automática para melhor responsividade */
+      }
+    }
+    .containerTable {
+      flex-direction: row;
+      height: auto; /* Adiciona altura automática para melhor responsividade */
+      border: solid #cbd4e1 1px;
+      border-radius: 2px;
+      width: 100vw;
+      overflow-y: auto; /* Adiciona scroll vertical se o conteúdo exceder a altura */
+      scroll-behavior: smooth;
+    }
+  }
+
+  //padrão para celulares
+  @media (max-width: 500px) {
+    .layoutSolicitacao {
+      width: 100%; /* Corrigido para 100% */
+      overflow-y: auto; /* Adiciona scroll vertical se o conteúdo exceder a altura */
+      scroll-behavior: smooth;
+
+      .containerPrincipalSolicitacao {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+      }
+      .containerPrincipalSolicitacao {
+        display: flex;
+
+        flex-direction: column;
+      }
+      .headerSolicitacao {
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Adiciona largura total para melhor responsividade */
+      }
+      .mainSolicitacao {
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Adiciona largura total para melhor responsividade */
+
+        .formSolicitacao {
+          display: flex;
+          width: 100%; /* Adiciona largura total para melhor responsividade */
+          height: auto; /* Adiciona altura automática para melhor responsividade */
+          flex-direction: column; /* Adiciona direção de coluna para melhor responsividade */
+          align-items: center; /* Adiciona alinhamento central para melhor responsividade */
+          justify-content: center; /* Adiciona justificação central para melhor responsividade */
+          margin: 0; /* Adiciona margem zero para melhor responsividade */
+          padding: 1rem; /* Adiciona padding para melhor responsividade */
+          border: 1px solid #ccc; /* Adiciona borda para melhor visualização */
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra para melhor visualização */
+          transition: all 0.3s ease; /* Adiciona transição suave para alterações */
+          &:hover {
+            background-color: #f0f0f0; /* Adiciona cor de fundo ao passar o mouse */
+          }
+          &:focus {
+            border: 2px solid #007bff; /* Adiciona borda ao focar no elemento */
+          }
+        }
+      }
+      .containerStatus_juok5_73 {
+        margin-top: 26vh;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        width: 80%;
+        height: 20vh;
+        margin-top: 63vh;
+        &:focus {
+          border: 2px solid #007bff; /* Adiciona borda ao focar no elemento */
+        }
+      }
+      .formSolicitacao {
+        &:focus {
+          border: 2px solid #007bff; /* Adiciona borda ao focar no elemento */
+        }
+      }
+    }
+  }
+}

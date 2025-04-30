@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+
+  .Capa {
+    background-image: url(/tela-login/navio_capa.png);
+    width: 63.5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .Logo {
+    display: flex;
+    width: 36.5%;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh; // Corrigido para incluir a unidade
+
+    .Frame-logo {
+      background-image: url(/tela-login/logo-ws.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      justify-content: center;
+      align-items: center;
+      width: 35vw;
+      height: 15.9vh;
+      margin-top: -10vh;
+    }
+
+    h1 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 0.2vh;
+      align-items: center;
+      font-family: "inter", sans;
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    p {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #0844c4;
+    }
+
+    form {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+
+      .Username {
+        height: 3vh;
+        width: 20vw;
+        border: 0.8px solid #cbd4e1;
+        border-radius: 6px;
+        margin-bottom: 0.5rem;
+        height: 5vh;
+        width: 24.5vw;
+      }
+
+      .Password {
+        height: 3vh;
+        width: 20vw;
+        border: 0.8px solid #cbd4e1;
+        border-radius: 6px;
+        margin-bottom: 0.5rem;
+        height: 5vh;
+        width: 24.5vw;
+      }
+
+      input:hover {
+        border: 0.8px solid #001a3d;
+      }
+
+      input:focus {
+        border: 0.8px solid #0844c4;
+        box-shadow: 0 0 0 0.3rem #cbd4e1;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 4px;
+        gap: 4px;
+        border-radius: 4px;
+        width: 40%;
+        box-shadow: none;
+      }
+
+      .Entrar {
+        background-color: #001a3d;
+        width: 5vw;
+        height: 5.6vh;
+        color: #ffffff;
+        border-radius: 4px;
+        font-size: 1.2 rem;
+        font-weight: 200;
+        font-weight: 700;
+        font-size: 16px;
+      }
+      .Entrar:hover {
+        background: #001a3d;
+        font-size: 1.2 rem;
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+      }
+
+      .CriarConta {
+        background-color: #00bedd;
+        width: 15vw;
+        height: 5.6vh;
+        color: #ffffff;
+        border-radius: 4px;
+        font-size: 1.1rem;
+        font-weight: 200;
+        border: none;
+        font-weight: 700;
+      }
+
+      .CriarConta:hover {
+        background: #00acc7;
+        font-size: 1 rem;
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+      }
+    }
+  }
+  //tamanho padrão para tablets
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+      height: 100vh; // Corrigido para incluir a unidade
+      .Capa {
+        width: 100%;
+        height: 50%;
+      }
+      .Logo {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        margin-top: 15vh;
+        p {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          align-self: center;
+          color: #0844c4;
+          
+        }
+        .Username {
+          height: 3vh;
+          width: 20vw;
+          border: 0.8px solid #cbd4e1;
+          border-radius: 6px;
+          margin-bottom: 0.5rem;
+          height: 5vh;
+          width: 24.5vw;
+        }
+      }
+    }
+  }
+}
+//tamanho padrão para celulares
+@media (max-width: 500px) {
+  main {
+    flex-direction: column;
+    height: 100vh; // Corrigido para incluir a unidade
+    .Capa {
+      width: 100%;
+      height: 50%;
+    }
+    .Logo {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      justify-self: center;
+      margin-top: 5vh;
+      form {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        .Username {
+          width: 92.5%;
+          height: 5vh;
+        }
+        .Password {
+          width: 92.5%;
+          height: 5vh;
+        }
+        p {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          align-self: center;
+          align-content: center;
+          color: #0844c4;
+          width: 50vw;
+          font-family: "inter", sans;
+          font-size: small;
+          flex-wrap: wrap;
+        }
+        .btn {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          padding: 4px;
+          gap: 4px;
+          border-radius: 4px;
+          width: 55%;
+          box-shadow: none;
+          .Entrar {
+            background-color: #001a3d;
+            width: 25vw;
+            height: 5.6vh;
+            color: #ffffff;
+            border-radius: 4px;
+            font-size: 1.2 rem;
+            font-weight: 200;
+            font-weight: 700;
+            font-size: 16px;
+          }
+          .Entrar:hover {
+            background: #001a3d;
+            font-size: 1.2 rem;
+            font-family: Inter;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+          }
+  
+          .CriarConta {
+            background-color: #00bedd;
+            width: 50vw;
+            height: 5.6vh;
+            color: #ffffff;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 200;
+            border: none;
+            font-weight: 700;
+          }
+  
+          .CriarConta:hover {
+            background: #00acc7;
+            font-size: 1 rem;
+            font-family: Inter;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+          }
+        }
+        
+        
+      }
+    }
+  }
+}
