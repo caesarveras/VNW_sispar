@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Ambiente Python
+backend/venv/
+backend/__pycache__/
+
+# Ambiente Node.js
+frontend/node_modules/
+frontend/.next/
