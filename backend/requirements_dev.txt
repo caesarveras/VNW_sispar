@@ -1,0 +1,12 @@
+# Testes e debugging
+pytest==7.4.0
+pytest-cov==4.1.0
+debugpy==1.6.7          # Para debugging no VS Code
+
+# Documentação
+flask-swagger-ui==3.36.0
+flasgger==0.9.5
+
+# Formatação de código
+black==23.7.0
+flake8==6.0.0
