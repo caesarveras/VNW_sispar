@@ -2,8 +2,8 @@ import styles from "./Solicitacao.module.scss";
 import { useEffect, useState } from "react"; 
 import Api from "../../Services/Api.jsx"; // Importando a API para fazer requisições
 import Navbar from "../../components/Navbar/Navbar.jsx";
-import Home from "/Dashboard/home-header.png"; // Replace with the correct path to the 'Home' asset
-import Seta from "/Dashboard/Vector.png";
+import Home from "/home.png"; // Replace with the correct path to the 'Home' asset
+import Seta from "/vector.png";
 import Deletar from "/solicitacao/deletar.png";
 import Lixeira from "/solicitacao/lixeira.png";
 import Calendario from "/solicitacao/calendario.png"
